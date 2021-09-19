@@ -34,7 +34,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
           - name: TZ
-            value: "Europe/Berlin"
+            value: {{ .Values.environment.timezone }}
           - name: RUNAS_UID0
             value: "false"
           ports:

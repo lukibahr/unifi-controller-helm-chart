@@ -14,6 +14,9 @@ serviceAccount:
   annotations: {}
   name: ""
 
+environment:
+  timezone: "Europe/Berlin"
+
 service:
   type: "LoadBalancer"
   ports:

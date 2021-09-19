@@ -2,7 +2,7 @@ apiVersion: v2
 name: unifi-controller
 description: A Helm chart for deploying a unifi-controller on Kubernetes
 type: application
-version: 1.0.2
+version: 1.0.3
 keywords:
   - unifi
   - controller 
