@@ -1,6 +1,7 @@
 # WIP: Unifi Controller Helm Chart
 
 This is still work-in-progress.
+
 ## Controller Ports
 
 |Protocol|Port|Purpose|
@@ -26,3 +27,4 @@ This is still work-in-progress.
 - releaser action used for releasing the charts: https://github.com/helm/chart-releaser-actionhttps://github.com/helm/chart-releaser-action
 - https://help.ui.com/hc/en-us/articles/218506997-UniFi-Ports-Used
 - syslogng: https://hub.docker.com/r/linuxserver/syslog-ng
+- Unifi UAP-LR-PRO: https://dl.ubnt.com/guides/UniFi/UniFi_AP-AC-LR_QSG.pdf

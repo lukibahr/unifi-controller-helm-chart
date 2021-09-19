@@ -11,6 +11,8 @@ syslogng.md
 # Chart dependencies
 **/charts/*.tgz
 
+*.tgz
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -30,3 +32,5 @@ syslogng.md
 # End of https://www.toptal.com/developers/gitignore/api/helm,visualstudiocode
 
 .env
+
+snmp*

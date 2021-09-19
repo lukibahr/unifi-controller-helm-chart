@@ -24,4 +24,9 @@ jobs:
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.2.1
         env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          CR_TOKEN: "${{ secrets.CR_TOKEN }}"
+          CR_OWNER: "${{ secrets.CR_OWNER }}"
+          CR_GIT_REPO: "${{ secrets.CR_GIT_REPO }}"
+          CR_PACKAGE_PATH: "${{ secrets.CR_PACKAGE_PATH }}"
+          CR_GIT_BASE_URL: "${{ secrets.CR_GIT_BASE_URL }}"
+          CR_GIT_UPLOAD_URL: "${{ secrets.CR_GIT_UPLOAD_URL }}"
