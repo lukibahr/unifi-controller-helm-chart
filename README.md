@@ -2,7 +2,11 @@
 
 This is still work-in-progress.
 
-## Controller Ports
+The unifi controller helm chart installs a unifi controller software onto your kubernetes cluster. A Kubernetes cluster (k3s, kind, K8s, or anything else) is required. For exposing the ports, MetalLB or any other LoadBalancer implementation is required.
+
+## Controller ports
+
+The following is a list of ports that are used by the unifi controller. The ports are exposed by a MetalLB service to be discoverable in your network.
 
 |Protocol|Port|Purpose|
 |--|--|--|
@@ -18,13 +22,15 @@ This is still work-in-progress.
 |UDP|10001|Port used for device discovery|
 |UDP|1900|Port used for "Make application discoverable on L2 network" in the UniFi Network settings|
 
-## ToDos
+## Open todos / tasks
 
-- Add mongodb support
-- Add terraform provisoning
+- Add support for MongoDB as the database backend
+- Add sidecar container for storing backups on S3 or any other storage provider
+- Add monitoring, including prometheus-snmp exporter
+
 ## Further reading
 
-- releaser action used for releasing the charts: https://github.com/helm/chart-releaser-actionhttps://github.com/helm/chart-releaser-action
-- https://help.ui.com/hc/en-us/articles/218506997-UniFi-Ports-Used
-- syslogng: https://hub.docker.com/r/linuxserver/syslog-ng
-- Unifi UAP-LR-PRO: https://dl.ubnt.com/guides/UniFi/UniFi_AP-AC-LR_QSG.pdf
+- releaser action used for releasing the charts: [https://github.com/helm/chart-releaser-action](https://github.com/helm/chart-releaser-action)
+- Jacob alberty's container [https://hub.docker.com/r/jacobalberty/unifi](https://hub.docker.com/r/jacobalberty/unifi) and repository [https://github.com/jacobalberty/unifi-docker](https://github.com/jacobalberty/unifi-docker)
+- Chart releaser used for publishing helm chart: [https://github.com/helm/chart-releaser](https://github.com/helm/chart-releaser)
+- Unifi controller ports: [https://help.ui.com/hc/en-us/articles/218506997-UniFi-Ports-Used](https://help.ui.com/hc/en-us/articles/218506997-UniFi-Ports-Used)

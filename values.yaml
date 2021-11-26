@@ -16,6 +16,7 @@ serviceAccount:
 
 environment:
   timezone: "Europe/Berlin"
+  stdout: true
 
 service:
   type: "LoadBalancer"
