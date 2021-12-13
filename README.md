@@ -22,6 +22,12 @@ The following is a list of ports that are used by the unifi controller. The port
 |UDP|10001|Port used for device discovery|
 |UDP|1900|Port used for "Make application discoverable on L2 network" in the UniFi Network settings|
 
+## Security issues
+
+|CVE|Fixed version|Status|
+|--|--|--|
+|Log4Shell (CVE-2021-44228)|v6.5.54|mitigated|
+
 ## Open todos / tasks
 
 - Add support for MongoDB as the database backend
