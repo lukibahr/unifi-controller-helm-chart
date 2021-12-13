@@ -6,8 +6,14 @@ CR := $(shell which cr)
 
 all: login build tag push
 
+include .env
+export
+
 package:
 	$(CR) package .
+
+upload:
+	$(CR) upload	
 
 cleanup:
 	rm $(ARTIFACTS)

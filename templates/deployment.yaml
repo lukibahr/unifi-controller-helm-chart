@@ -38,7 +38,7 @@ spec:
           - name: RUNAS_UID0
             value: "false"
           - name: UNIFI_STDOUT
-            value: {{ .Values.environment.stdout }}
+            value: "{{ .Values.environment.stdout }}"
           ports:
           - containerPort: 8080
             protocol: TCP
