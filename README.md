@@ -1,6 +1,6 @@
-# WIP: Unifi Controller Helm Chart
+# DEPRECATED: Unifi Controller Helm Chart
 
-This is still work-in-progress.
+As I will no longer run unifi controller on my k3s cluster and I've shut down my cluster for an unknown time, I'll no longer maintain this helm chart.
 
 The unifi controller helm chart installs a unifi controller software onto your kubernetes cluster. A Kubernetes cluster (k3s, kind, K8s, or anything else) is required. For exposing the ports, MetalLB or any other LoadBalancer implementation is required.
 
